@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio Rafael</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light blur-bg">
+      <div class="container">
+        <a class="navbar-brand ms-5" href="#"><img src="images/logo_bg.png" alt="" class="small-logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="container me-7">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link class="no-select" onclick="delayNavigation(event, 'link1')" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link class="no-select" onclick="delayNavigation(event, 'link2')" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link class="no-select" href="#kontak">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    
+    <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+      <div class="row">
+        <div class="col-md-6">
+          <!-- Kolom teks -->
+          <div class="text-column">
+            <p class="mt-7 fs-4 no-select">Hello I'am</p>
+            <h2 class="no-select">Gregorious Pierre Rafael</h2>
+            <p class="no-select">I am a 1st semester student of PJJ PENS.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <!-- Kolom gambar -->
+          <div class="image-column">
+            <img src="images/me.jpg" alt="Deskripsi Gambar" class="img-fluid" id="scrollImage" style="max-width: 300px; height: auto; pointer-events: none;">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <hr style="width: 100%; height: 20px; color: black;">
+    <div class="container mt-8 mb-7">
+      <h2 class="no-select text-center mb-7">My Hobbies<span>✨</span></h2>
+      <div class="row no-select">
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <i class="fas fa-gamepad fs-7 "></i>
+              <h3>Game</h3>
+              <p>Gaming provides me with entertainment and an escape from everyday pressures, helping to reduce stress and creating fun.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card mt-3">
+            <div class="card-body">
+              <i class="fas fa-swimmer fs-7"></i>
+              <h3>Swimming</h3>
+              <p>Being in the water gives freedom.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3" >
+          <div class="card">
+            <div class="card-body">
+              <i class="fas fa-camera fs-7"></i>
+              <h3>Photography</h3>
+              <p>Likes to capture the moment.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card mt-3">
+            <div class="card-body">
+              <i class="fas fa-plane fs-7"></i>
+              <h3>Traveling</h3>
+              <p>I love the new scenery and the people's lives.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <hr style="width: 100%; height: 20px; color: black;">
+    <div class="container mt-8 mb-7">
+      <h2 class="no-select text-center mb-7">How Far I Learn<span>✨</span></h2>
+      <div class="row justify-content-center">
+        <div class="col-2 text-center border-3 me-4">
+          <img src="images/html.svg" class="img-fluid mt-1 mb-1" alt="Gambar 1" width="140">
+        </div>
+        <div class="col-2 text-center border-3 me-4">
+          <img src="images/css.svg" class="img-fluid mt-1 mb-1" alt="Gambar 1" width="140">
+        </div>
+        <div class="col-2 text-center border-3 ">
+          <img src="images/javascript.svg" class="img-fluid mt-3" alt="Gambar 3" width="140">
+        </div>
+        
+      </div>
+      <div class="row justify-content-center mt-3">
+        <div class="col-2 text-center border-3 me-4">
+          <img src="images/bootstrap.svg" class="img-fluid mt-3" alt="Gambar 4" width="140">
+        </div>
+        <div class="col-2 text-center border-3 me-4">
+          <img src="images/wordpress.svg" class="img-fluid mt-1" alt="Gambar 5" width="140">
+        </div>
+        <div class="col-2 text-center border-3">
+          <img src="images/laravel.svg" class="img-fluid mt-1" alt="Gambar 6" width="140">
+        </div>
+      </div>
+    </div>
+
+    <hr style="width: 100%; height: 20px; color: black;">
+    <div class="container mt-8 mb-5">
+      <h2 class="no-select text-center mb-5">Contact Me<span>✨</span></h2>
+      <div class="row justify-content-center">
+        <div class="col-2 text-center me-3">
+          <img src="images/Luck.jpeg" class="img-fluid mt-1 mb-1" alt="Gambar 1" width="240" style="border-radius: 80px;">
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-6 text-center me-3 mt-2">
+          <h3>Let us be connected</h3>
+          <h3>Contact me via</h3>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-4">
+            <div class="card p-4" style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); border: none;">
+              <div class="row justify-content-around">
+                <div class="col-2 text-center">
+                  <a href="https://wa.me/085755303860" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-whatsapp-square fa-3x" style="color: black;"></i>
+                  </a>
+                </div>
+                <div class="col-2 text-center">
+                  <a href="https://www.instagram.com/whosipael" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram-square fa-3x" style="color: black;"></i>
+                  </a>
+                </div>
+                <div class="col-2 text-center">
+                  <a href="mailto:youremail@example.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-envelope-square fa-3x" style="color: black;"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>      
+    </div>
+
+    <footer class="text-center py-3" id="kontak">
+      <div class="container">
+        <p>&copy; Made with ☕ GregoriousRafael.</p>
+      </div>
+    </footer>
+
+    <script src="bootstrap/js/bootstrap.min.js""></script>
+    <script src="script.js""></script>
+  </body>
+</html>

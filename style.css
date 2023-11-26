@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap");
+
+/* Reset Margin dan Padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Custom CSS */
+body {
+  margin: 0;
+  background-color: #f1f5f9;
+}
+
+.no-select {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+.mt-7 {
+  margin-top: 45px;
+}
+
+.mt-8 {
+  margin-top: 125px;
+}
+
+.mb-7 {
+  margin-bottom: 135px;
+}
+
+.me-7 {
+  margin-right: 500px;
+}
+
+.fs-7 {
+    font-size: 36px;
+}
+
+.small-logo {
+  max-width: 40px; /* Ubah ukuran maksimum sesuai kebutuhan */
+  height: auto;
+}
+
+.navbar {
+  background-color: transparent !important; /* Membuat navbar transparan */
+}
+
+.navbar-nav .nav-link {
+  position: relative;
+  color: #000; /* Warna teks default */
+  text-decoration: none; /* Hapus garis bawah default */
+}
+
+.navbar-nav .nav-link:hover {
+  text-decoration: none; /* Hapus underline default */
+}
+
+.navbar-nav .nav-link:hover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px; /* Ketebalan garis bawah saat hover */
+  bottom: -2px; /* Jarak garis bawah dari teks */
+  background-color: #000; /* Warna garis bawah saat hover */
+}
+
+.blur-bg {
+  backdrop-filter: blur(10px);
+  transition: backdrop-filter 0.3s ease-in-out;
+}
+
+.blur-bg.scrolled {
+  backdrop-filter: blur(0px);
+}
+
+
+
+/* CSS untuk animasi */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Terapkan animasi pada span */
+span {
+  display: inline-block;
+  animation: float 2s ease-in-out infinite;
+}
+
+.border-3 {
+  border: 2px solid #cbd5e1; /* Ubah warna atau style sesuai kebutuhan */
+  border-radius: 18px;
+}
+
+.shadow {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Ini adalah properti bayangan hitam */
+  border-radius: 18px;
+}
+
+.card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  border: 3px solid #94a3b8; /* Menambahkan border dengan warna #94a3b8 sebesar 3px */
+}
+
+.card.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.vertical-line {
+  border-left: 3px solid black;
+  height: 20vh; /* Menyesuaikan tinggi vertikal line dengan tinggi viewport */
+  align-items: center;
+  justify-content: center;
+}
+
+.animate-left {
+  opacity: 0; /* Mulai dengan opacity 0 agar elemen tidak terlihat */
+  transform: translateX(-50px); /* Geser ke kiri sejauh 50px */
+  transition: opacity 0.5s ease, transform 1s ease; /* Animasi transition */
+}
+
+.animate-left.active {
+  opacity: 1; /* Set opacity ke 1 untuk menampilkan elemen saat discroll */
+  transform: translateX(0); /* Kembalikan posisi ke semula (tidak tergeser) */
+}
+
+.animate-right {
+  opacity: 0; /* Mulai dengan opacity 0 agar elemen tidak terlihat */
+  transform: translateX(50px); /* Geser ke kanan sejauh 50px */
+  transition: opacity 0.5s ease, transform 1s ease; /* Animasi transition */
+}
+
+.animate-right.active {
+  opacity: 1; /* Set opacity ke 1 untuk menampilkan elemen saat discroll */
+  transform: translateX(0); /* Kembalikan posisi ke semula (tidak tergeser) */
+}
+
+footer {
+  background-color: #f5f5f5; /* Warna latar belakang footer */
+  padding: 20px 0;
+  margin-top: 20px; /* Jika diperlukan untuk memberi jarak antara footer dan konten lainnya */
+}
+
+footer .container {
+  position: relative;
+}
+
+footer .copyright {
+  background-color: #000; /* Warna latar belakang hitam */
+  color: #fff; /* Warna teks putih */
+  padding: 10px 0;
+  text-align: center;
+  margin: 0; /* Hapus margin */
+}
